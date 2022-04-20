@@ -1,18 +1,19 @@
 // ==UserScript==
-// @name            PasDargentsPourLesVod
-// @namespace       https://github.com/V1RU513N/outdated
-// @description     PasDargentsPourLesVod
-// @license         MIT
-// @version         0.0.1
-// @author          V12U513N
-// @match           https://www.twitch.tv/*
-// @require         https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.0.11/hls.min.js
-// @require         https://unpkg.com/plyr/dist/plyr.min.js
-// @run-at          document-start
-// @grant           none
-// @icon            https://raw.githubusercontent.com/V1RU513N/outdated/main/png.png
-// @downloadURL     https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
-// @updateURL       https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
+// @name         PasDargentsPourLesVod
+// @namespace    https://github.com/V1RU513N/outdated
+// @description  PasDargentsPourLesVod
+// @license      MIT
+// @version      0.0.1
+// @author       V12U513N
+// @match        https://www.twitch.tv/*
+// @require      https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.0.11/hls.min.js
+// @require      https://unpkg.com/plyr/dist/plyr.min.js
+// @run-at       document-start
+// @grant        none
+// @icon         https://raw.githubusercontent.com/V1RU513N/outdated/main/png.png
+// @downloadURL  https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
+// @updateURL    https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
+
 // ==/UserScript==
 
 /******/ (function() { // webpackBootstrap
