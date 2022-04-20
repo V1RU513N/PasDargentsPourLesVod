@@ -11,7 +11,6 @@
 // @run-at          document-start
 // @grant           none
 // @icon            https://i.imgur.com/VV8n0KF.png
-// @updateURL 
 // ==/UserScript==
 
 /******/ (function() { // webpackBootstrap
