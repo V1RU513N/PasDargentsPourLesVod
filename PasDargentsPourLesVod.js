@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            PasDargentsPourLesVod
-// @namespace   Violentmonkey Scripts
+// @namespace       https://github.com/V1RU513N/outdated
 // @description     PasDargentsPourLesVod
 // @license         MIT
 // @version         0.0.1
@@ -10,7 +10,9 @@
 // @require         https://unpkg.com/plyr/dist/plyr.min.js
 // @run-at          document-start
 // @grant           none
-// @icon            https://i.imgur.com/VV8n0KF.png
+// @icon            https://raw.githubusercontent.com/V1RU513N/outdated/main/png.png
+// @downloadURL     https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
+// @updateURL       https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
 // ==/UserScript==
 
 /******/ (function() { // webpackBootstrap
