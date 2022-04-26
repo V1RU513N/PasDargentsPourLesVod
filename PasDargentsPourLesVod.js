@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         PasDargentsPourLesVod
 // @namespace    https://github.com/V1RU513N/PasDargentsPourLesVod
-// @description  PasDargentsPourLesVod
+// @description  PasDargentsPourLesVod0nLySub
 // @license      MIT
-// @version      0.0.3
+// @version      0.0.2
 // @author       V12U513N
 // @match        https://www.twitch.tv/*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.0.11/hls.min.js
