@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PasDargentsPourLesVod
-// @namespace    https://github.com/V1RU513N/outdated
+// @namespace    https://github.com/V1RU513N/PasDargentsPourLesVod
 // @description  PasDargentsPourLesVod
 // @license      MIT
 // @version      0.0.1
@@ -10,9 +10,9 @@
 // @require      https://unpkg.com/plyr/dist/plyr.min.js
 // @run-at       document-start
 // @grant        none
-// @icon         https://raw.githubusercontent.com/V1RU513N/outdated/main/png.png
-// @downloadURL  https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
-// @updateURL    https://raw.githubusercontent.com/V1RU513N/outdated/main/PasDargentsPourLesVod.js
+// @icon         https://raw.githubusercontent.com/V1RU513N/PasDargentsPourLesVod/main/png.png
+// @downloadURL  https://raw.githubusercontent.com/V1RU513N/PasDargentsPourLesVod/main/PasDargentsPourLesVod.js
+// @updateURL    https://raw.githubusercontent.com/V1RU513N/PasDargentsPourLesVod/main/PasDargentsPourLesVod.js
 
 // ==/UserScript==
 
