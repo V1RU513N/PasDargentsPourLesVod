@@ -219,7 +219,7 @@ function retrieveVOD(className) {
         }
 
         const onPlayerReady = () => {
-            console.log("[TwitchNoSub] Player is ready");
+            console.log("[PasDargentsPourLesVod] Player is ready");
 
             if (isFirefox() && player == undefined) {
                 player = window.wrappedJSObject.twitch_player;
