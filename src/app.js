@@ -60,7 +60,7 @@ function checkSubOnlyVOD() {
 
     vodSetup = true;
 
-    console.log("[TwitchNoSub] Twitch VOD found");
+    console.log("[PasDargentsPourLesVod] Twitch VOD found");
 
     setTimeout(() => {
         // Check if the page contains Sub only VOD message
@@ -74,14 +74,14 @@ function checkSubOnlyVOD() {
             checkSub = $("span[data-test-selector='seekbar-segment__segment']");
 
             if (checkSub.length) {
-                console.log("[TwitchNoSub] This is not a sub-only VOD");
+                console.log("[PasDargentsPourLesVod] This is not a sub-only VOD");
 
                 checkSub = undefined;
             }
         }
 
         if (checkSub != undefined) {
-            console.log("[TwitchNoSub] Sub-only VOD found");
+            console.log("[PasDargentsPourLesVod] Sub-only VOD found");
             // Replace sub only message with a loading gif
             checkSub.html('<img src="https://i.imgur.com/gyI14eY.gif" alt="Loading VOD">');
 
@@ -129,8 +129,8 @@ function retrieveVOD(className) {
 
         const resolutions = data.resolutions;
 
-        console.log("[TwitchNoSub] Start retrieving VOD links");
-        console.log("[TwitchNoSub] VOD resolutions : " + JSON.stringify(resolutions));
+        console.log("[PasDargentsPourLesVod] Start retrieving VOD links");
+        console.log("[PasDargentsPourLesVod] VOD resolutions : " + JSON.stringify(resolutions));
 
         const currentURL = new URL(data.animated_preview_url);
 
@@ -138,8 +138,8 @@ function retrieveVOD(className) {
         const paths = currentURL.pathname.split("/");
         const vodSpecialID = paths[paths.findIndex(element => element.includes("storyboards")) - 1];
 
-        console.log("[TwitchNoSub] VOD ID : " + vodSpecialID);
-        console.log("[TwitchNoSub] VOD type : " + data.broadcast_type);
+        console.log("[PasDargentsPourLesVod] VOD ID : " + vodSpecialID);
+        console.log("[PasDargentsPourLesVod] VOD type : " + data.broadcast_type);
 
         let sources = "";
 
