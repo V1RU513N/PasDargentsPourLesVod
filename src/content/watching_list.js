@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
                         <div class="utilities">
                             <div class="btn">
                                 <button title="Continuer">
-                                    <a href="https://www.twitch.tv/videos/${vod["link"]}" target="_blank">Watch</a>
+                                    <a href="https://www.twitch.tv/videos/${vod["link"]}" target="_blank">Regarder</a>
                                 </button>
                                 <button title="Supprimer" class="delete_btn" id="${id}">X</button>
                             </div>
