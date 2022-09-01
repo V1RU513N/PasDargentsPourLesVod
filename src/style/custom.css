@@ -2,7 +2,7 @@
 Custom player CSS
 */
 .vjs-control-bar {
-    background-color: transparent !important;
+    background: linear-gradient(transparent,#000) !important;
     font-size: 125%;
 }
 
