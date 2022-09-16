@@ -70,12 +70,16 @@ function checkSubOnlyVOD() {
             checkSub = undefined;
 
             // Some twitch VODs are just black ?
+            // Check if there is a seek bar
             checkSub = document.querySelector("span[data-test-selector='seekbar-segment__segment']");
 
             if (checkSub) {
                 console.log("[PasDargentsPourLesVod] This is not a sub-only VOD");
 
                 checkSub = undefined;
+            } else {
+                // There is no seek bar, this is a sub-only VOD
+                checkSub = document.querySelector(".persistent-player");
             }
         }
 
@@ -267,16 +271,24 @@ function retrieveVOD(className) {
             player.on('seeked', () => {
                 seeked = true;
             });
+
+            if (isFirefox()) {
+                // Fix full screen max height
+                document.querySelectorAll(".channel-page__video-player").forEach(p => {
+                    p.setAttribute("style", "max-height: 100vh !important");
+                });
+            }
         };
 
         // Init the player
         if (isFirefox()) {
             //Don't know why firefox only work with this
             window.eval(`
-                videojs.Vhs.xhr.beforeRequest = function (options) {
+                videojs.Hls.xhr.beforeRequest = function (options) {
                     options.uri = options.uri.replace('unmuted.ts', 'muted.ts');
                     return options;
                 };
+
                 const player = videojs('video', {
                     playbackRates: [0.5, 1, 1.25, 1.5, 2],
                     controlBar: {
@@ -304,7 +316,7 @@ function retrieveVOD(className) {
             });
         } else {
             // Patch the m3u8 VOD file to be readable
-            videojs.Vhs.xhr.beforeRequest = function (options) {
+            videojs.Hls.xhr.beforeRequest = function (options) {
                 options.uri = options.uri.replace('unmuted.ts', 'muted.ts');
                 return options;
             };
@@ -361,7 +373,7 @@ function retrieveVOD(className) {
         }, false);
 
         // Chat
-        if (!settings.user.chat.enabled && data.broadcast_type == "upload") {
+        if (!settings.user.chat.enabled || data.broadcast_type == "upload") {
             return;
         }
 
