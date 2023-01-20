@@ -8,8 +8,12 @@
     },
     "web_accessible_resources": [
         {
-            "resources": [ "amazon-ivs-worker.min.js" ],
-            "matches": [ "https://www.twitch.tv/*" ]
+            "resources": [
+                "src/amazon-ivs-worker.min.js"
+            ],
+            "matches": [
+                "https://www.twitch.tv/*"
+            ]
         }
     ],
     "background": {
