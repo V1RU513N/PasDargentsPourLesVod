@@ -1,6 +1,6 @@
 {
     "name": "Pas D'argents Pour Les VOD",
-    "version": "1.1",
+    "version": "1.2",
     "description": "FUCKLESUBONLY",
     "manifest_version": 3,
     "icons": {
@@ -16,7 +16,6 @@
         "service_worker": "src/background.js"
     },
     "host_permissions": [
-        "https://raw.githubusercontent.com/*",
         "https://www.twitch.tv/*",
         "https://static.twitchcdn.net/assets/*"
     ],
